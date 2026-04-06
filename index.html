@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Product Updates | Quorum</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: #edf0f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+  }
+
+  .outer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 12px 48px;
+  }
+
+  .card {
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  /* Header */
+  .header-logo {
+    background-color: #ffffff;
+    padding: 28px 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e4e9ee;
+  }
+  .header-logo img {
+    width: 160px;
+    display: inline-block;
+  }
+  .header-title {
+    background-color: #1c3556;
+    padding: 24px 40px;
+    text-align: center;
+  }
+  .header-title .eyebrow {
+    color: #7aaccc;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .header-title h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .header-title .subtitle {
+    color: #5a8fb0;
+    font-size: 13px;
+  }
+
+  /* Filter bar */
+  .filter-bar {
+    padding: 28px 40px 0;
+  }
+  .filter-bar label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2c6fad;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #d0dce8;
+    background: #ffffff;
+    color: #4a6a8a;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-weight: 600;
+  }
+  .filter-btn:hover {
+    border-color: #2c6fad;
+    color: #2c6fad;
+  }
+  .filter-btn.active {
+    background-color: #1c3556;
+    border-color: #1c3556;
+    color: #ffffff;
+  }
+
+  /* Divider */
+  .divider {
+    padding: 0 40px;
+    margin-top: 28px;
+  }
+  .divider hr {
+    border: none;
+    border-top: 1px solid #e4e9ee;
+  }
+
+  /* Issues list */
+  .issues {
+    padding: 24px 40px 36px;
+  }
+  .month-group {
+    margin-bottom: 32px;
+  }
+  .month-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2c6fad;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .issue-card {
+    border: 1px solid #e4e9ee;
+    border-radius: 4px;
+    padding: 20px 22px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .issue-card:hover {
+    border-color: #2c6fad;
+    box-shadow: 0 2px 8px rgba(28,53,86,0.08);
+  }
+  .issue-card.hidden {
+    display: none;
+  }
+
+  .issue-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .issue-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f4f8;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .issue-logo img {
+    max-width: 30px;
+    max-height: 26px;
+    object-fit: contain;
+  }
+  .issue-info {}
+  .issue-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1c3556;
+    margin-bottom: 3px;
+  }
+  .issue-desc {
+    font-size: 13px;
+    color: #7a8fa0;
+  }
+  .issue-arrow {
+    color: #2c6fad;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-left: 12px;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 32px 0;
+    color: #aaaaaa;
+    font-size: 14px;
+    display: none;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 24px 40px 28px;
+    border-top: 1px solid #e4e9ee;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+  .footer a {
+    color: #2c6fad;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="outer">
+  <div class="card">
+
+    <!-- Header -->
+    <div class="header-logo">
+      <img src="Quorum0logo-n-01.svg" alt="Quorum">
+    </div>
+    <div class="header-title">
+      <p class="eyebrow">PRODUCT UPDATE</p>
+      <h1>What We're Building</h1>
+      <p class="subtitle">Select an edition to read</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <label>Filter by product</label>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All editions</button>
+        <button class="filter-btn" data-filter="dealermine">DealerMine</button>
+        <button class="filter-btn" data-filter="dms">Quorum DMS</button>
+        <button class="filter-btn" data-filter="autovance">Autovance</button>
+      </div>
+    </div>
+
+    <div class="divider"><hr></div>
+
+    <!-- Issues list -->
+    <div class="issues">
+
+      <!-- April 2026 -->
+      <div class="month-group" id="group-april-2026">
+        <p class="month-label">April 2026 &nbsp;·&nbsp; Issue No. 1</p>
+
+        <a class="issue-card" href="newsletter-dealermine-april-2026.html" data-edition="dealermine">
+          <div class="issue-meta">
+            <div class="issue-logo">
+              <img src="dm-logo-blue-newclass.svg" alt="DealerMine">
+            </div>
+            <div class="issue-info">
+              <div class="issue-title">DealerMine Edition</div>
+              <div class="issue-desc">MORI · Service CRM · Sales CRM · DMS · Autovance · ACC</div>
+            </div>
+          </div>
+          <span class="issue-arrow">→</span>
+        </a>
+
+        <a class="issue-card" href="newsletter-dms-april-2026.html" data-edition="dms">
+          <div class="issue-meta">
+            <div class="issue-logo">
+              <img src="logo-quorum-dms-color-01.svg" alt="Quorum DMS">
+            </div>
+            <div class="issue-info">
+              <div class="issue-title">Quorum DMS Edition</div>
+              <div class="issue-desc">MORI · DMS · DealerMine · Autovance · ACC</div>
+            </div>
+          </div>
+          <span class="issue-arrow">→</span>
+        </a>
+
+        <a class="issue-card" href="newsletter-autovance-april-2026.html" data-edition="autovance">
+          <div class="issue-meta">
+            <div class="issue-logo">
+              <img src="AV-logo-s-i-new-01.svg" alt="Autovance">
+            </div>
+            <div class="issue-info">
+              <div class="issue-title">Autovance Edition</div>
+              <div class="issue-desc">MORI · Autovance · DealerMine · DMS · ACC</div>
+            </div>
+          </div>
+          <span class="issue-arrow">→</span>
+        </a>
+
+      </div>
+      <!-- /April 2026 -->
+
+      <div class="empty-state" id="empty-state">No editions match this filter.</div>
+
+    </div>
+    <!-- /issues -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        <a href="https://quoruminfotech.com">quoruminfotech.com</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        &copy; 2026 Quorum Information Technologies
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const issueCards = document.querySelectorAll('.issue-card');
+  const emptyState = document.getElementById('empty-state');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      let visibleCount = 0;
+
+      issueCards.forEach(card => {
+        if (filter === 'all' || card.dataset.edition === filter) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Hide month group headings if all their cards are hidden
+      document.querySelectorAll('.month-group').forEach(group => {
+        const visibleCards = group.querySelectorAll('.issue-card:not(.hidden)');
+        group.style.display = visibleCards.length === 0 ? 'none' : '';
+      });
+
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
