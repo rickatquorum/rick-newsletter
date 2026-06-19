@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>What We're Building (June 2026) | Quorum DMS</title>
+</head>
+<body style="margin:0;padding:0;background-color:#edf0f4;font-family:Arial,Helvetica,sans-serif;">
+
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#edf0f4;">
+<tr>
+<td align="center" style="padding:24px 12px;">
+
+  <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;width:100%;background-color:#ffffff;">
+
+    <!-- ======================================== -->
+    <!-- HEADER                                   -->
+    <!-- ======================================== -->
+    <!-- Logo strip (light background) -->
+    <tr>
+      <td style="background-color:#ffffff;padding:28px 40px 20px;text-align:center;border-bottom:1px solid #e4e9ee;">
+        <img src="content/branding/Quorum0logo-n-01.svg" alt="Quorum" width="160" height="auto" style="display:inline-block;">
+      </td>
+    </tr>
+    <!-- Title strip (dark background) -->
+    <tr>
+      <td style="background-color:#1c3556;padding:24px 40px 24px;text-align:center;">
+        <p style="margin:0 0 4px;color:#7aaccc;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">PRODUCT UPDATE</p>
+        <h1 style="margin:8px 0 0;color:#ffffff;font-size:28px;font-weight:700;font-family:Arial,Helvetica,sans-serif;">What We're Building</h1>
+        <p style="margin:10px 0 0;color:#5a8fb0;font-size:13px;font-family:Arial,Helvetica,sans-serif;">June 2026 &nbsp;·&nbsp; Issue No. 2</p>
+      </td>
+    </tr>
+
+    <!-- ======================================== -->
+    <!-- OPENING — FROM RICK                      -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 32px;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">A NOTE FROM RICK</p>
+        <h2 style="margin:0 0 22px;font-size:21px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Issue two, and we're just getting warmed up.</h2>
+
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Hi everyone. Thank you for the response to the first issue. A fair bit of you replied directly, and that's exactly what I was hoping for. I read every one of them.
+        </p>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We've had a busy month across every product, so this issue is a little more packed than the last. There are four things I'm genuinely excited to walk you through: MORI keeps moving faster than anything else we have, the DealerMine Sales CRM picked up a handful of really nice improvements (with a brand new AI power-up landing in July), we made it a lot easier for our F&amp;I Menu users to keep deals in sync, and the DMS Core team has been making some big moves on AutoPay, a modernized browser, and reporting.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          So, let me start where I always want to start these days: MORI.
+        </p>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:1px solid #e4e9ee;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- MORI SPOTLIGHT                           -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 32px;background-color:#f5f8fb;">
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">SPOTLIGHT</p>
+        <!-- MORI logo -->
+        <img src="content/newsletter-content/april-2026/moriAI.png" alt="MORI AI" width="160" height="auto" style="display:block;margin:0 0 20px;">
+        <h2 style="margin:0 0 6px;font-size:22px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Book by Teams is here, and the early numbers are turning heads.</h2>
+        <p style="margin:0 0 24px;font-size:13px;color:#5a8fb0;font-family:Arial,Helvetica,sans-serif;font-style:italic;">Our biggest mover, month after month</p>
+
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          MORI continues to be the biggest mover and shaker we have, and it isn't close. This month we wrapped up Book by Teams, which a lot of you have been waiting on. In plain terms: MORI can now check availability and book into the right team for the job, so a quick lube request lands in your quick lube shop and main shop work lands in your main shop, all driven by your opcodes and transportation types. It works much the way it does in OLS, and you can turn it on yourself right from the MORI AI tab.
+        </p>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We also tightened up the booking logic underneath it. MORI now validates the requested day and time against your actual availability before it books (so a day you've marked full stays full), and it handles invalid opcodes gracefully instead of pushing a blank line to the DMS. Small things on paper, big things at the service desk.
+        </p>
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          And here's the part I'm most excited about. We've been pulling together the numbers from some of our early adopters, and what we're seeing is genuinely impressive:
+        </p>
+
+        <!-- MORI EARLY-ADOPTER STAT GRAPHIC -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:26px;">
+          <tr>
+            <td width="48%" valign="top" style="background-color:#1c3556;border-radius:4px;padding:26px 18px;text-align:center;">
+              <p style="margin:0 0 6px;color:#ffffff;font-size:38px;font-weight:700;line-height:1;font-family:Arial,Helvetica,sans-serif;">100%</p>
+              <p style="margin:0;color:#9cc2dc;font-size:13px;line-height:1.5;font-family:Arial,Helvetica,sans-serif;">of inbound calls answered, 24/7</p>
+            </td>
+            <td width="4%">&nbsp;</td>
+            <td width="48%" valign="top" style="background-color:#2c6fad;border-radius:4px;padding:26px 18px;text-align:center;">
+              <p style="margin:0 0 6px;color:#ffffff;font-size:38px;font-weight:700;line-height:1;font-family:Arial,Helvetica,sans-serif;">&gt;25%</p>
+              <p style="margin:0;color:#d6e6f3;font-size:13px;line-height:1.5;font-family:Arial,Helvetica,sans-serif;">of calls converted to a shown appointment</p>
+            </td>
+          </tr>
+        </table>
+        <p style="margin:0 0 22px;font-size:12px;color:#7a93ab;font-style:italic;font-family:Arial,Helvetica,sans-serif;">Early results from our first stores running MORI. More detail to come as the group grows.</p>
+
+        <p style="margin:0 0 28px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          If you haven't switched MORI on yet, or you want to see Book by Teams set up for your shop, reach out to your account team or message me directly. I'd love to get you in the group we're measuring.
+        </p>
+
+        <!-- CTA BUTTON -->
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="background-color:#2c6fad;border-radius:3px;">
+              <a href="#" style="display:inline-block;padding:13px 30px;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Learn more about MORI &nbsp;→</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:1px solid #e4e9ee;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- DMS SECTION                              -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 8px;">
+        <img src="content/branding/logo-quorum-dms-color-01.svg" alt="Quorum DMS" height="36" style="display:block;max-width:260px;">
+        <hr style="border:none;border-top:3px solid #1c3556;margin:14px 0 0;">
+      </td>
+    </tr>
+
+    <!-- DMS: AutoPay -->
+    <tr>
+      <td style="padding:24px 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Quorum AutoPay: pilots opening this summer</h3>
+
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We're getting close on AutoPay, our fully integrated payments solution built right into the DMS. Service, parts, sales, everywhere. No more typing the amount into a separate terminal, tracking reference numbers, or doing daily reconciliations by hand. Development is well underway and the pieces are coming together nicely.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          I want to make the callout for pilots again. We're aiming for August to get our first clients live on it, and I'd love a handful of stores in that first group. If you're interested in being a beta store, message me and I'll connect you with Jeffrey.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DMS: Modernized browser -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">A modernized browser for integrated apps</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          The integrated applications inside the DMS (Autovance and PowerLane among them) now run on a newer, more modern browser interface. That sounds like plumbing, and it is, but it's the kind of plumbing you feel every day: better performance, better stability, and fewer compatibility headaches. It's a foundation we'll keep building on.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DMS: Selective F&I Updates -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Push F&amp;I updates only (without re-pushing the whole deal)</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          This one is for our F&amp;I Menu users on Autovance and Quorum DMS. The two teams built a new integration option that lets you send only the F&amp;I-related updates from Autovance to the DMS (fees, F&amp;I products, extended warranties, insurance products, and vehicle pricing) instead of re-pushing the entire deal.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          The practical win: any changes you've made directly on the DMS worksheet stay intact, while your F&amp;I information stays up to date. No more stepping on your own work to keep the menu in sync.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DMS: PowerLane Motor Data -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">PowerLane: All-Makes maintenance schedules, powered by Motor Data</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Colten and the PowerLane team took a big step this month. We've brought Motor Data into PowerLane, which puts factory maintenance schedules for all makes right in the lane. So whatever rolls into your drive, your advisors can see the manufacturer-recommended services for that vehicle (with estimated labor pricing right on each item) and sell maintenance with confidence, without flipping between systems or guessing. It's available as an optional add-on, so if it's something you'd want for your shop, reach out and we'll walk you through it.
+        </p>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We also resolved a longstanding issue with the Work Order tech copy printing, which I know has been a thorn for some of you for a while. That's now sorted.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          And coming next is something I'm genuinely excited about for the lane: auto-retry and offline detection. If your shop has spots where the wifi gets sketchy, PowerLane will handle it far more gracefully, so your advisors keep moving instead of fighting the connection.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DMS: Expense Variance Report -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 14px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">New: Expense Variance Report in QAnalytics</h3>
+
+        <img src="content/newsletter-content/june-2026/expense-variance.png" alt="Expense Variance Report in QAnalytics" width="520" style="display:block;max-width:100%;height:auto;margin-bottom:20px;border:1px solid #e4e9ee;">
+
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          This one came straight from conversations with you. The feedback we kept hearing was "it would be great to see my expense variance year over year, or month over month." So we built it. The new Expense Variance Report gives you a fresh look at expenses with the ability to compare against a prior period of your choosing.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          You set the comparison (yearly, quarterly, or by period), pick your prior and current periods, and filter to a single department if you'd rather. From there you can look at variance by department in summary or detail, or drop down to the account level and expand a single account to see exactly which departments are driving the change.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DMS: Early stages (Parts Price Codes + Forecasting) -->
+    <tr>
+      <td style="padding:0 40px 36px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Early days on two more we're excited about</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          First, Parts Price Codes. Today, when your counter or service lane needs to apply a one-off discount that isn't tied to a specific associate, staff end up working out the discounted price on a calculator and typing it into the Price Used field. Price Codes fix that. You'll be able to set up your own discount rules (think Retail less a percentage, or Cost plus a percentage), pick one right on a part sale or work order, and have the DMS calculate the price for you. It applies just to that transaction, and the code shows on the line so it's easy to see what was applied and why. Watch for it in the next couple of releases.
+        </p>
+
+        <img src="content/newsletter-content/june-2026/parts_price_code.png" alt="Parts Price Codes" width="360" style="display:block;max-width:100%;height:auto;margin-bottom:20px;border:1px solid #e4e9ee;">
+
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Second, we've started discovery and design on an accounting P&amp;L forecasting tool, built to help you project your profit and loss and plan ahead with real numbers from the DMS. We're working through it with a dealer partner right now, and I'd love a few more voices in that conversation. If P&amp;L forecasting is something you'd want a say in, raise your hand and we'll bring you in.
+        </p>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:1px solid #e4e9ee;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- DEALERMINE SECTION                        -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 8px;">
+        <img src="content/branding/dm-logo-blue-newclass.svg" alt="DealerMine CRM" height="36" style="display:block;max-width:260px;">
+        <hr style="border:none;border-top:3px solid #1c3556;margin:14px 0 0;">
+      </td>
+    </tr>
+
+    <!-- DealerMine: Sales CRM intro -->
+    <tr>
+      <td style="padding:24px 40px 0;">
+        <p style="margin:0 0 20px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          There's a lot happening on DealerMine right now, and the Sales CRM in particular had a great month. A handful of improvements here, and a brand new AI power-up just around the corner.
+        </p>
+
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Sales CRM</p>
+
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Coming in July: the DealerMine Sales CRM AI Assistant</h3>
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Keep your eyes peeled for this one. We're introducing a built-in sales tool that helps your team work every opportunity with confidence: instantly understand where each customer stands, know exactly what to do next, and reach out with the right message at the right time. More details are coming, but I wanted you to hear it here first.
+        </p>
+
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">BDC Lead Performance, now on the Dashboard</h3>
+
+        <img src="content/newsletter-content/june-2026/bdc-dashboard.png" alt="BDC Lead Performance on the Dashboard" width="460" style="display:block;max-width:100%;height:auto;margin:0 0 20px;border:1px solid #e4e9ee;">
+
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We added a new BDC Lead Performance section to the Dashboard, with two views that answer two different questions. The BDC Lead Funnel follows a single group of leads through every stage (Processed, Engaged, Appointments, Shows, Sold), so your conversion rates stay consistent and meaningful. The BDC Activity Performance view summarizes raw output in a timeframe (leads assigned, processed, appointments created, shows, and sales). One tells you how well leads convert, the other tells you how much work the team is putting out, and together they give managers a real read on the BDC.
+        </p>
+
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Google Address Lookup for new customers</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Address Lookup (powered by Google Places) is now in the desktop web app too. It suggests and auto-fills addresses as you type, matching what the Sales Mobile App has had all along.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DealerMine: Sales Mobile App -->
+    <tr>
+      <td style="padding:28px 40px 0;">
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Sales Mobile App</p>
+
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Steady investment in mobile, starting with notifications</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We've been putting real, ongoing work into the Sales Mobile App. The headline this round is push notifications, which now arrive more consistently and reliably (nothing for you to do on your end). Alongside that, adding a customer to the Traffic Log and setting a status now auto-checks the matching Steps to the Sale (for stores with steps automated from traffic status), and that behavior is finally consistent across the app and the desktop, so there's less manual cleanup after the fact.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          This is just the start. We're going to keep investing in the mobile app between now and the fall, with more functionality on the way.
+        </p>
+      </td>
+    </tr>
+
+    <!-- DealerMine: Service CRM / MORI -->
+    <tr>
+      <td style="padding:24px 40px 36px;">
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Service CRM</p>
+
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">More MORI, plus a Gmail win</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          The big Service CRM story is MORI's Book by Teams (up in the spotlight above), but there's one more I want to flag: we finally received our verified-app approval from Google. That means new corporate Gmail accounts can be added to DealerMine again through the Google API. It was a frustrating one to wait on, and I'm glad it's behind us.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Alongside that, the team worked through a long list of fixes across telephony, Tekion and PBS integrations, and reporting. Nothing flashy, but exactly the kind of steady work that keeps the platform solid underneath you.
+        </p>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:1px solid #e4e9ee;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- AUTOVANCE SECTION                         -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 8px;">
+        <img src="content/branding/AV-logo-s-i-new-01.svg" alt="Autovance" height="36" style="display:block;max-width:200px;">
+        <hr style="border:none;border-top:3px solid #1c3556;margin:14px 0 0;">
+      </td>
+    </tr>
+
+    <!-- Autovance: CarBuzz marketplace integration -->
+    <tr>
+      <td style="padding:24px 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Your inventory, in front of millions: the CarBuzz integration</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          This is one of the first things I'm excited to show off from the Valsoft side of the house. The Autovance team has been working with CarBuzz to build an integration into their new marketplace product. CarBuzz is part of Valnet, a Valsoft sister company, and their ecosystem (CarBuzz.com, TopSpeed.com, and HotCars.com) sees roughly 20 million page views a month.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          With this connection in place, your active inventory can be surfaced to car shoppers reading relevant content (think a vehicle featured in an article paired with live local listings). It's a new, high-quality top-of-funnel channel for your store, and it's exactly the kind of thing being part of the Valsoft family opens up. More to come as we expand it.
+        </p>
+      </td>
+    </tr>
+
+    <!-- Autovance: User Management -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">More control over your team, without calling support</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We rolled out a series of User Management improvements in Desk Settings. Any user with Desk Settings access can now see the full list of users at the dealership, and edit salesperson and user profiles directly (names, email, title, provincial registration, default managers, and deal role dropdowns) without going through Admin or support. We also cleaned up the table to match the rest of Desk Settings and moved the delete button inside the edit modal so nobody removes a salesperson by accident.
+        </p>
+      </td>
+    </tr>
+
+    <!-- Autovance: GM Protection fully integrated -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">GM dealers: GM Protection is fully integrated in the F&amp;I Menu</h3>
+
+        <img src="content/newsletter-content/june-2026/gm-protection.png" alt="GM Protection" width="240" style="display:block;max-width:100%;height:auto;margin:0 0 18px;">
+
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          If you're a GM dealer, this one's for you. We now have GM Protection fully integrated into the Autovance F&amp;I Menu, from rating to registration right through to electronic signature on the service contract. It's the kind of end-to-end integration that actually saves time at the desk. If you'd like it turned on for your store, let us know and we'll get it added.
+        </p>
+      </td>
+    </tr>
+
+    <!-- Autovance: Notes overhaul -->
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">A rebuilt Notes &amp; Activities section</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          The team overhauled the Notes &amp; Activities section, and I think it brings real value day to day. You can now filter with quick-select chips (User Notes, Deal Views, Documents, or Activity) instead of scrolling through everything, filters update in real time, and multi-select lets you combine categories.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We also fixed note entry so you can write multi-line notes right in the input field (Enter for a new line, Ctrl+Enter or the Note button to post). One thing to keep in mind: multi-line notes live in Autovance and won't carry over to your DMS.
+        </p>
+      </td>
+    </tr>
+
+    <!-- Autovance: Q DMS sync -->
+    <tr>
+      <td style="padding:0 40px 36px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Tighter sync with Quorum DMS</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          A couple of changes make the Autovance-to-DMS handoff cleaner. Speculative vehicles pushed to Quorum DMS now default to dealership ownership (and no longer require a customer on the deal to complete the push), and the Stock # you enter in Autovance now flows through to the Unit # field in the DMS so your inventory stays easy to cross-reference.
+        </p>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:2px solid #1c3556;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- WHAT'S COMING                            -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 36px;background-color:#f5f8fb;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">WHAT'S COMING</p>
+        <h2 style="margin:0 0 22px;font-size:21px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">A few things to watch for</h2>
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">DealerMine Sales CRM AI Assistant</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">A brand new AI power-up for the Sales CRM, landing in July. Know where every customer stands and exactly what to do next.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Quorum AutoPay pilots</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">Fully integrated payments in the DMS. We're aiming for August to get our first stores live. Message me to join the pilot group.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">MORI early-adopter results</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">We're finalizing the numbers from our first stores running MORI. I'll share them in the next issue.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;border-bottom:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Accounting P&amp;L Forecasting tool</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">A tool to project your P&amp;L using real DMS numbers. In discovery and design with a dealer partner now. Raise your hand if you'd like a seat in the conversation.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td style="padding:0 40px;"><hr style="border:none;border-top:1px solid #e4e9ee;margin:0;"></td></tr>
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:32px 40px 36px;">
+        <p style="margin:0 0 18px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Thanks for reading. If anything in here prompts a question or you just want to chat about your products, you can reach your account team or just reply to this email and it'll come straight to me.
+        </p>
+        <p style="margin:0 0 2px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Rick Johnston</p>
+        <p style="margin:0 0 4px;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;">CPO, Quorum</p>
+        <p style="margin:0 0 2px;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;"><a href="mailto:rick.johnston@quoruminfotech.com" style="color:#2c6fad;text-decoration:none;">rick.johnston@quoruminfotech.com</a></p>
+        <p style="margin:0 0 0;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;">(403) 795-5676</p>
+
+        <hr style="border:none;border-top:1px solid #e4e9ee;margin:26px 0;">
+
+        <p style="margin:0 0 8px;font-size:12px;color:#aaaaaa;text-align:center;font-family:Arial,Helvetica,sans-serif;">
+          <a href="#" style="color:#2c6fad;text-decoration:none;">quoruminfotech.com</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#" style="color:#2c6fad;text-decoration:none;">Contact your account team</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#" style="color:#2c6fad;text-decoration:none;">Unsubscribe</a>
+        </p>
+        <p style="margin:0;font-size:11px;color:#cccccc;text-align:center;font-family:Arial,Helvetica,sans-serif;">
+          &copy; 2026 Quorum Information Technologies. All rights reserved.
+        </p>
+      </td>
+    </tr>
+
+  </table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
