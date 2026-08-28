@@ -221,7 +221,7 @@
     var valid = ['DM', 'AV', 'QDMS'];
     var upper = edition.toUpperCase();
     if (valid.indexOf(upper) !== -1) {
-      var month = params.get('month') || 'april-2026';
+      var month = params.get('month') || 'august-2026';
       location.replace('newsletter-' + month + '.html?edition=' + upper);
     }
   }
