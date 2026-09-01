@@ -6,12 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>What We're Building | Quorum Product Newsletter</title>
 <link rel="icon" type="image/png" href="content/branding/faviconV2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background-color: #edf0f4;
+    background-color: #F0F3F6;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+    color: #494C4F;
   }
 
   .outer {
@@ -26,36 +29,33 @@
   }
 
   /* Header */
-  .header-logo {
-    background-color: #ffffff;
-    padding: 28px 40px 20px;
+  .header-brand {
+    background-color: #0054A6;
+    background-image: linear-gradient(180deg, #217ADC 0%, #0054A6 100%);
+    padding: 32px 40px 28px;
     text-align: center;
-    border-bottom: 1px solid #e4e9ee;
   }
-  .header-logo img {
-    width: 160px;
+  .header-brand img {
+    width: 210px;
     display: inline-block;
+    margin-bottom: 22px;
   }
-  .header-title {
-    background-color: #1c3556;
-    padding: 24px 40px;
-    text-align: center;
-  }
-  .header-title .eyebrow {
-    color: #7aaccc;
+  .header-brand .eyebrow {
+    color: #ffffff;
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 6px;
   }
-  .header-title h1 {
+  .header-brand h1 {
     color: #ffffff;
+    font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 8px;
   }
-  .header-title .subtitle {
-    color: #5a8fb0;
+  .header-brand .subtitle {
+    color: #D6EBFF;
     font-size: 13px;
   }
 
@@ -67,14 +67,14 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #2c6fad;
+    color: #0054A6;
     font-weight: 700;
     margin-bottom: 14px;
   }
   .about p {
     font-size: 15px;
     line-height: 1.75;
-    color: #333333;
+    color: #494C4F;
     margin-bottom: 16px;
   }
   .about p:last-child {
@@ -84,9 +84,9 @@
   /* Contact card */
   .contact-block {
     margin: 28px 40px 0;
-    background-color: #f5f8fb;
-    border: 1px solid #d8e4ee;
-    border-radius: 4px;
+    background-color: #EBF4FF;
+    border: 1px solid #D6E3F0;
+    border-radius: 12px;
     padding: 22px 24px;
     display: flex;
     align-items: center;
@@ -96,26 +96,28 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: #1c3556;
+    background-color: #0054A6;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     color: #ffffff;
+    font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.5px;
   }
   .contact-info {}
   .contact-name {
+    font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: #1c3556;
+    color: #001329;
     margin-bottom: 2px;
   }
   .contact-title {
     font-size: 13px;
-    color: #7a8fa0;
+    color: #7A93AB;
     margin-bottom: 6px;
   }
   .contact-links {
@@ -124,7 +126,7 @@
     line-height: 1.6;
   }
   .contact-links a {
-    color: #2c6fad;
+    color: #0054A6;
     text-decoration: none;
   }
   .contact-links a:hover {
@@ -138,7 +140,7 @@
   }
   .divider hr {
     border: none;
-    border-top: 1px solid #e4e9ee;
+    border-top: 1px solid #D6E3F0;
   }
 
   /* Issues list */
@@ -149,14 +151,14 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #2c6fad;
+    color: #0054A6;
     font-weight: 700;
     margin-bottom: 16px;
   }
 
   .issue-card {
-    border: 1px solid #e4e9ee;
-    border-radius: 4px;
+    border: 1px solid #D6E3F0;
+    border-radius: 12px;
     padding: 20px 22px;
     margin-bottom: 10px;
     display: flex;
@@ -167,8 +169,8 @@
     transition: border-color 0.15s, box-shadow 0.15s;
   }
   .issue-card:hover {
-    border-color: #2c6fad;
-    box-shadow: 0 2px 8px rgba(28,53,86,0.08);
+    border-color: #0054A6;
+    box-shadow: 0 2px 8px rgba(0, 84, 166, 0.12);
   }
   .issue-card:last-child {
     margin-bottom: 0;
@@ -178,36 +180,23 @@
     min-width: 0;
   }
   .issue-title {
+    font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: #1c3556;
+    color: #001329;
     margin-bottom: 3px;
   }
   .issue-desc {
     font-size: 13px;
-    color: #7a8fa0;
+    color: #7A93AB;
   }
   .issue-arrow {
-    color: #2c6fad;
+    color: #0054A6;
     font-size: 18px;
     flex-shrink: 0;
     margin-left: 16px;
   }
 
-  /* Footer */
-  .footer {
-    padding: 24px 40px 28px;
-    border-top: 1px solid #e4e9ee;
-    text-align: center;
-  }
-  .footer p {
-    font-size: 12px;
-    color: #aaaaaa;
-  }
-  .footer a {
-    color: #2c6fad;
-    text-decoration: none;
-  }
 </style>
 </head>
 <body>
@@ -218,11 +207,11 @@
   var params = new URLSearchParams(location.search);
   var edition = params.get('edition');
   if (edition) {
-    var valid = ['DM', 'AV', 'QDMS'];
+    var valid = ['DM', 'AV', 'QDMS', 'ACA', 'ACC'];
     var upper = edition.toUpperCase();
     if (valid.indexOf(upper) !== -1) {
       var month = params.get('month') || 'august-2026';
-      location.replace('newsletter-' + month + '.html?edition=' + upper);
+      location.replace('newsletter-' + month + '.html?edition=' + (upper === 'ACC' ? 'ACA' : upper));
     }
   }
 }());
@@ -232,10 +221,8 @@
   <div class="card">
 
     <!-- Header -->
-    <div class="header-logo">
-      <img src="content/branding/Quorum0logo-n-01.svg" alt="Quorum">
-    </div>
-    <div class="header-title">
+    <div class="header-brand">
+      <img src="content/branding/logo-quorum-dms-white-01.svg" alt="Quorum DMS">
       <p class="eyebrow">PRODUCT UPDATE</p>
       <h1>What We're Building</h1>
       <p class="subtitle">A monthly newsletter from the Quorum product team</p>
@@ -297,15 +284,6 @@
 
     </div>
     <!-- /issues -->
-
-    <!-- Footer -->
-    <div class="footer">
-      <p>
-        <a href="https://quoruminfotech.com">quoruminfotech.com</a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        &copy; 2026 Quorum Information Technologies
-      </p>
-    </div>
 
   </div>
 </div>
