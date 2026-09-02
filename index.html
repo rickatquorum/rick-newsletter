@@ -10,9 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --brand-primary: #0054A6;
+    --brand-navy: #001329;
+    --brand-page-bg: #F0F3F6;
+    --brand-wash: #EBF4FF;
+    --brand-border: #D6E3F0;
+    --brand-header-muted: #D6EBFF;
+    --brand-caption: #7A93AB;
+    --brand-logo-width: 210px;
+  }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background-color: #F0F3F6;
+    background-color: var(--brand-page-bg);
     font-family: Arial, Helvetica, sans-serif;
     color: #494C4F;
   }
@@ -30,13 +41,13 @@
 
   /* Header */
   .header-brand {
-    background-color: #0054A6;
+    background-color: var(--brand-primary);
     background-image: linear-gradient(180deg, #217ADC 0%, #0054A6 100%);
     padding: 32px 40px 28px;
     text-align: center;
   }
   .header-brand img {
-    width: 210px;
+    width: var(--brand-logo-width);
     display: inline-block;
     margin-bottom: 22px;
   }
@@ -55,7 +66,7 @@
     margin-bottom: 8px;
   }
   .header-brand .subtitle {
-    color: #D6EBFF;
+    color: var(--brand-header-muted);
     font-size: 13px;
   }
 
@@ -67,7 +78,7 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #0054A6;
+    color: var(--brand-primary);
     font-weight: 700;
     margin-bottom: 14px;
   }
@@ -84,8 +95,8 @@
   /* Contact card */
   .contact-block {
     margin: 28px 40px 0;
-    background-color: #EBF4FF;
-    border: 1px solid #D6E3F0;
+    background-color: var(--brand-wash);
+    border: 1px solid var(--brand-border);
     border-radius: 12px;
     padding: 22px 24px;
     display: flex;
@@ -96,7 +107,7 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: #0054A6;
+    background-color: var(--brand-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,12 +123,12 @@
     font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: #001329;
+    color: var(--brand-navy);
     margin-bottom: 2px;
   }
   .contact-title {
     font-size: 13px;
-    color: #7A93AB;
+    color: var(--brand-caption);
     margin-bottom: 6px;
   }
   .contact-links {
@@ -126,7 +137,7 @@
     line-height: 1.6;
   }
   .contact-links a {
-    color: #0054A6;
+    color: var(--brand-primary);
     text-decoration: none;
   }
   .contact-links a:hover {
@@ -140,7 +151,7 @@
   }
   .divider hr {
     border: none;
-    border-top: 1px solid #D6E3F0;
+    border-top: 1px solid var(--brand-border);
   }
 
   /* Issues list */
@@ -151,13 +162,13 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #0054A6;
+    color: var(--brand-primary);
     font-weight: 700;
     margin-bottom: 16px;
   }
 
   .issue-card {
-    border: 1px solid #D6E3F0;
+    border: 1px solid var(--brand-border);
     border-radius: 12px;
     padding: 20px 22px;
     margin-bottom: 10px;
@@ -169,8 +180,8 @@
     transition: border-color 0.15s, box-shadow 0.15s;
   }
   .issue-card:hover {
-    border-color: #0054A6;
-    box-shadow: 0 2px 8px rgba(0, 84, 166, 0.12);
+    border-color: var(--brand-primary);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--brand-primary) 12%, transparent);
   }
   .issue-card:last-child {
     margin-bottom: 0;
@@ -183,15 +194,15 @@
     font-family: Catamaran, Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: #001329;
+    color: var(--brand-navy);
     margin-bottom: 3px;
   }
   .issue-desc {
     font-size: 13px;
-    color: #7A93AB;
+    color: var(--brand-caption);
   }
   .issue-arrow {
-    color: #0054A6;
+    color: var(--brand-primary);
     font-size: 18px;
     flex-shrink: 0;
     margin-left: 16px;
@@ -201,31 +212,15 @@
 </head>
 <body>
 
-<!-- Edition redirect: if ?edition= is present, go straight to the newsletter -->
-<script>
-(function () {
-  var params = new URLSearchParams(location.search);
-  var edition = params.get('edition');
-  if (edition) {
-    var valid = ['DM', 'AV', 'QDMS', 'ACA', 'ACC'];
-    var upper = edition.toUpperCase();
-    if (valid.indexOf(upper) !== -1) {
-      var month = params.get('month') || 'august-2026';
-      location.replace('newsletter-' + month + '.html?edition=' + (upper === 'ACC' ? 'ACA' : upper));
-    }
-  }
-}());
-</script>
-
 <div class="outer">
   <div class="card">
 
     <!-- Header -->
-    <div class="header-brand">
-      <img src="content/branding/logo-quorum-dms-white-01.svg" alt="Quorum DMS">
+    <div id="header-brand" class="header-brand">
+      <img id="header-logo" src="content/branding/logo-quorum-dms-white-01.svg" alt="Quorum DMS">
       <p class="eyebrow">PRODUCT UPDATE</p>
       <h1>What We're Building</h1>
-      <p class="subtitle">A monthly newsletter from the Quorum product team</p>
+      <p id="header-subtitle" class="subtitle">A monthly newsletter from the Quorum product team</p>
     </div>
 
     <!-- About -->
@@ -287,6 +282,8 @@
 
   </div>
 </div>
+
+<script src="theme.js"></script>
 
 </body>
 </html>

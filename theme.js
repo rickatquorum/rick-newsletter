@@ -153,11 +153,28 @@
       var next = replaceColors(s, map);
       if (next !== s) el.setAttribute('style', next);
     }
+
+    var bgNodes = document.querySelectorAll('[bgcolor]');
+    for (var j = 0; j < bgNodes.length; j++) {
+      var node = bgNodes[j];
+      var bg = (node.getAttribute('bgcolor') || '').toLowerCase();
+      if (map[bg]) node.setAttribute('bgcolor', map[bg]);
+    }
   }
 
   function applyChrome(theme) {
     document.body.setAttribute('data-edition', theme.name);
-    document.documentElement.style.setProperty('--brand-primary', theme.primary);
+
+    var root = document.documentElement;
+    root.style.setProperty('--brand-primary', theme.primary);
+    root.style.setProperty('--brand-navy', theme.navy);
+    root.style.setProperty('--brand-page-bg', theme.pageBg);
+    root.style.setProperty('--brand-wash', theme.wash);
+    root.style.setProperty('--brand-border', theme.border);
+    root.style.setProperty('--brand-header-muted', theme.headerMuted);
+    root.style.setProperty('--brand-caption', theme.caption);
+    root.style.setProperty('--brand-accent', theme.accent);
+    root.style.setProperty('--brand-logo-width', theme.logoWidth + 'px');
 
     var header = document.getElementById('header-brand');
     if (header) {
@@ -177,11 +194,32 @@
     if (muted) muted.style.color = theme.headerMuted;
   }
 
+  function preserveEditionOnLinks(edition) {
+    if (!new URLSearchParams(location.search).get('edition')) return;
+    var links = document.querySelectorAll('a[href]');
+    for (var i = 0; i < links.length; i++) {
+      var href = links[i].getAttribute('href');
+      if (!href) continue;
+      var file = href.split('?')[0].split('#')[0];
+      var name = file.split('/').pop();
+      if (name !== 'index.html' && name.indexOf('newsletter-') !== 0) continue;
+      var hash = href.indexOf('#') >= 0 ? href.slice(href.indexOf('#')) : '';
+      var query = href.indexOf('?') >= 0 ? href.slice(href.indexOf('?') + 1).split('#')[0] : '';
+      var params = new URLSearchParams(query);
+      params.set('edition', edition);
+      links[i].setAttribute('href', name + '?' + params.toString() + hash);
+    }
+  }
+
   function apply(edition) {
     var theme = THEMES[edition] || THEMES.QDMS;
     injectFonts();
     applyInlineColors(theme);
     applyChrome(theme);
+    preserveEditionOnLinks(edition);
+    if (document.querySelector('.issue-card')) {
+      document.title = "What We're Building | " + theme.name;
+    }
     return theme;
   }
 
