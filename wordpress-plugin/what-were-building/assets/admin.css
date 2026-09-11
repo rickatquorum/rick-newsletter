@@ -1,0 +1,74 @@
+.qnl-wrap {
+	max-width: 980px;
+}
+
+.qnl-lead {
+	font-size: 14px;
+	color: #3c434a;
+	max-width: 62em;
+}
+
+.qnl-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin: 20px 0;
+}
+
+.qnl-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 20px 22px 12px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.qnl-card-wide {
+	margin-bottom: 24px;
+}
+
+.qnl-card h2 {
+	margin: 0 0 10px;
+	font-size: 16px;
+}
+
+.qnl-label {
+	display: block;
+	font-weight: 600;
+	margin: 14px 0 6px;
+}
+
+.qnl-input {
+	width: 100%;
+	max-width: 100%;
+}
+
+.qnl-status {
+	margin-top: 8px;
+}
+
+.qnl-status.is-error {
+	color: #b32d2e;
+}
+
+.qnl-status.is-ok {
+	color: #1e7e34;
+}
+
+.qnl-result {
+	margin: 12px 0 8px;
+	padding: 12px 14px;
+	background: #edfaef;
+	border: 1px solid #68de7c;
+	border-radius: 6px;
+}
+
+.qnl-result a {
+	margin-right: 12px;
+}
+
+@media (max-width: 782px) {
+	.qnl-grid {
+		grid-template-columns: 1fr;
+	}
+}
