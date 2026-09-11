@@ -1,0 +1,68 @@
+@page {
+  margin: 0.5in;
+}
+
+html,
+body {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fff !important;
+}
+
+/* Drop the grey page chrome around the email card */
+body > table[role="presentation"] {
+  width: 100% !important;
+  background: #fff !important;
+}
+
+body > table[role="presentation"] > tbody > tr > td {
+  padding: 0 !important;
+}
+
+/* Full printable width — overrides the email 600px column */
+#newsletter-table {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.toc-row {
+  display: none !important;
+}
+
+#header-brand {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+/* Screenshots fill the column; brand marks keep their designed size */
+#newsletter-table img:not(#header-logo):not([height="36"]):not([height="30"]) {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+#newsletter-table img[width]:not(#header-logo):not([height="36"]):not([height="30"]) {
+  width: 100% !important;
+}
+
+#newsletter-table #header-logo {
+  width: var(--brand-logo-width, 210px) !important;
+  max-width: var(--brand-logo-width, 210px) !important;
+  height: auto !important;
+}
+
+/* Light/dark screenshot pairs should share the page, not stay 255px */
+#newsletter-table td[width="255"] {
+  width: 50% !important;
+}
+
+#newsletter-table td[width="255"] img {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#newsletter-table h2,
+#newsletter-table h3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
