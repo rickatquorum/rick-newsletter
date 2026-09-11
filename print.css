@@ -41,8 +41,15 @@ body > table[role="presentation"] > tbody > tr > td {
   height: auto !important;
 }
 
-#newsletter-table img[width]:not(#header-logo):not([height="36"]):not([height="30"]) {
+#newsletter-table img[width]:not(#header-logo):not([height="36"]):not([height="30"]):not([width="160"]) {
   width: 100% !important;
+}
+
+/* MORI mark is width="160"; do not treat it as a screenshot */
+#newsletter-table img[width="160"] {
+  width: 160px !important;
+  max-width: 160px !important;
+  height: auto !important;
 }
 
 #newsletter-table #header-logo {
