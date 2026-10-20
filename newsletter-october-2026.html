@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>What We're Building | October 2026 | Quorum DMS</title>
+<link rel="icon" type="image/png" href="content/branding/faviconV2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="print.css" media="print">
+<style>
+  h1, h2, h3 { font-family: Catamaran, Arial, Helvetica, sans-serif !important; font-weight: 700; }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#edf0f4;font-family:Arial,Helvetica,sans-serif;">
+
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#edf0f4;">
+<tr>
+<td align="center" style="padding:24px 12px;">
+
+  <table id="newsletter-table" role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;width:100%;background-color:#ffffff;">
+
+    <tbody id="fixed-top">
+
+    <!-- ======================================== -->
+    <!-- HEADER                                   -->
+    <!-- ======================================== -->
+    <tr>
+      <td id="header-brand" style="background-color:#0054A6;background-image:linear-gradient(180deg,#217ADC 0%,#0054A6 100%);padding:32px 40px 28px;text-align:center;">
+        <img id="header-logo" src="content/branding/logo-quorum-dms-white-01.svg" alt="Quorum DMS" width="210" style="display:inline-block;margin:0 0 22px;">
+        <p style="margin:0 0 4px;color:#ffffff;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">PRODUCT UPDATE</p>
+        <h1 style="margin:8px 0 0;color:#ffffff;font-size:28px;font-weight:700;font-family:Catamaran,Arial,Helvetica,sans-serif;">What We're Building</h1>
+        <p id="header-subtitle" style="margin:10px 0 0;color:#d6ebff;font-size:13px;font-family:Arial,Helvetica,sans-serif;">October 2026 &nbsp;·&nbsp; Issue No. 4</p>
+      </td>
+    </tr>
+
+    <!-- ======================================== -->
+    <!-- TABLE OF CONTENTS                        -->
+    <!-- ======================================== -->
+    <tr class="toc-row">
+      <td style="padding:24px 40px 30px;background-color:#f3f6fa;">
+        <p style="margin:0 0 14px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:16px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#1769aa;">In this issue</p>
+        <table id="toc-list" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-top:1px solid #d8e1eb;">
+          <tr>
+            <td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autopay" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">01</span></a>
+            </td>
+            <td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autopay" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">Auto Pay</a>
+            </td>
+            <td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autopay" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>
+            </td>
+          </tr>
+          <tr>
+            <td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dms" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">02</span></a>
+            </td>
+            <td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dms" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">Quorum DMS</a>
+            </td>
+            <td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dms" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>
+            </td>
+          </tr>
+          <tr>
+            <td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dealermine" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">03</span></a>
+            </td>
+            <td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dealermine" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">DealerMine</a>
+            </td>
+            <td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#dealermine" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>
+            </td>
+          </tr>
+          <tr>
+            <td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autovance" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">04</span></a>
+            </td>
+            <td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autovance" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">Autovance</a>
+            </td>
+            <td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#autovance" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>
+            </td>
+          </tr>
+          <tr>
+            <td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#whats-coming" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">05</span></a>
+            </td>
+            <td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#whats-coming" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">What's coming</a>
+            </td>
+            <td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">
+              <a href="#whats-coming" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ======================================== -->
+    <!-- OPENING - FROM RICK                      -->
+    <!-- ======================================== -->
+    <tr>
+      <td style="padding:36px 40px 32px;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">A NOTE FROM RICK</p>
+        <h2 style="margin:0 0 22px;font-size:21px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">A lot of what we have been building this year is now in your hands.</h2>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          In August we told you Auto Pay was in pilot, QAnalytics was being rebuilt and a new look for the DMS was on the way. Auto Pay is now live with Pay by Link right around the corner, QAnalytics 2.0 is live, and the first modernized DMS window lands in late November (in English and French). MORI keeps growing inside our BDC, and First Canadian is almost ready in Autovance.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We are also bringing PowerLane to DealerMine, and we are looking for pilot partners. More on that below.
+        </p>
+      </td>
+    </tr>
+
+    </tbody>
+
+    <!-- ======================================== -->
+    <!-- AUTO PAY SPOTLIGHT                       -->
+    <!-- ======================================== -->
+    <tbody id="section-autopay">
+
+    <tr>
+      <td id="autopay" style="padding:36px 40px 32px;background-color:#f5f8fb;">
+        <a name="autopay"></a>
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">SPOTLIGHT</p>
+        <h2 style="margin:0 0 6px;font-size:22px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Quorum Auto Pay is live, and Pay by Link is next.</h2>
+        <p style="margin:0 0 24px;font-size:13px;color:#5a8fb0;font-family:Arial,Helvetica,sans-serif;font-style:italic;">One payment provider, one bank deposit, no chasing links</p>
+        <p style="margin:0 0 24px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Auto Pay is out of pilot and live with customers, and as of this release your staff can also take a card over the phone right from the same window. Next up is Pay by Link, the biggest feature we have built for Auto Pay yet.
+        </p>
+        <img src="content/newsletter-content/october-2026/pay-by-link.png" alt="Quorum Auto Pay, Pay by Link on a Work Order" width="520" style="display:block;max-width:100%;height:auto;margin-bottom:20px;border:1px solid #e4e9ee;">
+        <p style="margin:0 0 24px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          From a Work Order, Parts Sale or Cash Transaction, your staff send the customer a secure payment link through Communicator by email or text. The customer pays from their phone, and the payment posts directly to the transaction and lands in the bank with the rest of your Auto Pay payments. No separate payment provider, no generating links by hand and no checking back to see if they were paid.
+        </p>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0;">
+          <tr>
+            <td style="padding:20px 22px;background-color:#ffffff;border:1px solid #d8e4ee;">
+              <p style="margin:0 0 8px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Not on Auto Pay yet?</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">If you want to be among the first stores using Pay by Link, reply to this email and we will get you connected with our account management team for a demo and pricing.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    </tbody>
+
+    <!-- ======================================== -->
+    <!-- QUORUM DMS SECTION                       -->
+    <!-- ======================================== -->
+    <tbody id="section-qdms">
+
+    <tr>
+      <td id="dms" style="padding:36px 40px 8px;">
+        <a name="dms"></a>
+        <img src="content/branding/logo-quorum-dms-color-01.svg" alt="Quorum DMS" height="36" style="display:block;max-width:260px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:14px 0 0;">
+          <tr>
+            <td width="48" height="1" bgcolor="#2c6fad" style="width:48px;height:1px;font-size:0;line-height:0;background-color:#2c6fad;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:24px 40px 28px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">The new Work Order window arrives late November</h3>
+        <img src="content/newsletter-content/october-2026/work-order-window.png" alt="The modernized Quorum DMS Work Order window" width="520" style="display:block;max-width:100%;height:auto;margin-bottom:20px;border:1px solid #e4e9ee;">
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Thank you to everyone who helped shape the new look we showed you in August. The first result is the Work Order window above, arriving in late November or early December. The core functionality has not changed. We have organized the information in a more streamlined way and standardized where the buttons sit.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          These changes also bring <strong style="color:#1c3556;">French language support</strong> for any user who prefers it, with more of the DMS available in French as the rollout continues.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 14px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">QAnalytics 2.0 is live</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          QAnalytics 2.0 is live and in use across our customers. We know the move from 1.0 came at an awkward time for month-end reporting, and we are working closely with customers to make sure this is an outstanding experience. The two features we are most excited about:
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Build your own dashboards.</strong> Click <strong>+ Dashboard</strong>, search for the charts you want and drag them onto the canvas. Add an OEM/RT filter and a date range so the numbers reflect your store and period.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Schedule delivery to anyone.</strong> Under <strong>Settings &gt; Alerts &amp; Reports</strong>, pick a dashboard, set the schedule and add your recipients. Monday morning numbers land in your managers' inboxes without anyone pulling them.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <h3 style="margin:0 0 14px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">AP automation, straight into Quorum DMS</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Valsoft (our parent company) recently acquired <a href="https://www.square-9.com/" style="color:#2c6fad;">Square 9</a>, a leader in AP automation. We are exploring an integration where your invoices are emailed in, read automatically, routed for approval and created as journals in Quorum DMS with the original attached. If that would help your accounting office, reply and let's chat.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:0 40px 36px;">
+        <h3 style="margin:0 0 16px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Also shipped in September and October</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Pricing Codes are here.</strong> Your parts staff can apply a wide range of pricing adjustments right in the sale, with no manual calculations.
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Signed VCRs on the Work Order.</strong> Signed Vehicle Condition Reports from PowerLane now show in the Work Order Document Viewer.
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Easier Auto Pay reconciliation.</strong> Cash transactions are now included, the R flag is set by default and declined transactions no longer clutter the notes.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">PowerLane and Ford updates.</strong> The MOTOR menu now shows the previous service interval so advisors can spot skipped work, inspection videos are sharper and upload reliably, and Ford GOASIS, RIM and Advanced Shipper Notification work is complete.
+        </p>
+      </td>
+    </tr>
+
+    </tbody>
+
+    <!-- ======================================== -->
+    <!-- DEALERMINE SECTION                       -->
+    <!-- ======================================== -->
+    <tbody id="section-dealermine">
+
+    <tr>
+      <td id="dealermine" style="padding:36px 40px 8px;">
+        <a name="dealermine"></a>
+        <img src="content/branding/dm-logo-blue-newclass.svg" alt="DealerMine CRM" height="36" style="display:block;max-width:260px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:14px 0 0;">
+          <tr>
+            <td width="48" height="1" bgcolor="#2c6fad" style="width:48px;height:1px;font-size:0;line-height:0;background-color:#2c6fad;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:24px 40px 28px;">
+        <h3 style="margin:0 0 14px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">PowerLane is coming to DealerMine</h3>
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          PowerLane is the service lane tool our Quorum DMS stores use every day for multi-point inspections, MOTOR maintenance menus, inspection videos and signed customer approvals. We are bringing it to the DealerMine side, integrated with your Service CRM.
+        </p>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0;">
+          <tr>
+            <td style="padding:20px 22px;background-color:#f5f8fb;border:1px solid #d8e4ee;">
+              <p style="margin:0 0 8px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Looking for pilot partners</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">If you are looking for a more complete service lane solution and want to help us shape it, reply to this email and we will set up a conversation.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:0 40px 28px;">
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Service CRM &amp; MORI</p>
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">MORI is ready for tire season</h3>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          MORI adoption has not slowed down, and the biggest growth right now is inside our own BDC. The change every service manager should know about is <strong style="color:#1c3556;">Booking Days Out</strong>: tell MORI not to offer times inside a set number of days, for every appointment or for specific op codes. Set your tire swap op codes a few days out and your team has time to pull tires from storage before the customer arrives.
+        </p>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          The settings screen arrives with DealerMine 9.8.7 in November. Until then, support can set it up for you (and if you already had a custom instruction for this, it has been applied).
+        </p>
+        <p style="margin:0 0 16px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          MORI also moved to a newer model built for voice agents, can now book by confirming the vehicle when the name on file does not match, picks the right op code when a customer only wants part of a package, and no longer books past closing.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">A heads up on ROI reports:</strong> duplicate ROs now count once, and only appointments booked after a campaign went out are included. Your numbers may come in lower than you are used to, but they are much more accurate.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:0 40px 36px;">
+        <p style="margin:0 0 16px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Sales CRM</p>
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">GM Canada and Subaru Canada leads</h3>
+        <p style="margin:0 0 18px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We are building lead integrations for GM Canada (through Shift Digital) and Subaru Canada (through Urban Science/SCI). GM is first, and we expect to be live on October 29th.
+        </p>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px;">
+          <tr>
+            <td style="padding:20px 22px;background-color:#f5f8fb;border:1px solid #d8e4ee;">
+              <p style="margin:0 0 8px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">GM dealers, want to pilot it?</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">If you are a GM store on DealerMine Sales CRM and want to be one of the first on the new integration, reply to this email and we will get you lined up.</p>
+            </td>
+          </tr>
+        </table>
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">The right worksheet, everywhere</h3>
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          When a traffic log has more than one worksheet, your salesperson can now pick the active one and it stays selected. That vehicle shows consistently across the traffic log, mobile app, follow ups, reports and customer emails, and carries over when a visit becomes a First Visit or Be-Back.
+        </p>
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Cleaner appointment and activity tracking</h3>
+        <p style="margin:0 0 22px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Appointment follow ups no longer default to Show, so your team has to record the real outcome. Showroom History now shows the full activity for internet leads (just like walk-ins) and the correct visit date on linked traffic logs. And customers can confirm their sales appointments online again without an error.
+        </p>
+        <h3 style="margin:0 0 14px;font-size:17px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">Odds and ends worth knowing</h3>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Fetch has a new Contact Stage filter for building campaigns, KO address search only suggests real Canadian and US street addresses, the Web Leads badge only counts leads that need action, and the Up List shows available salespeople first again.
+        </p>
+      </td>
+    </tr>
+
+    </tbody>
+
+    <!-- ======================================== -->
+    <!-- AUTOVANCE SECTION                        -->
+    <!-- ======================================== -->
+    <tbody id="section-autovance">
+
+    <tr>
+      <td id="autovance" style="padding:36px 40px 8px;">
+        <a name="autovance"></a>
+        <img src="content/branding/AV-logo-s-i-new-01.svg" alt="Autovance" height="36" style="display:block;max-width:200px;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:14px 0 0;">
+          <tr>
+            <td width="48" height="1" bgcolor="#2c6fad" style="width:48px;height:1px;font-size:0;line-height:0;background-color:#2c6fad;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:24px 40px 36px;">
+        <h3 style="margin:0 0 14px;font-size:19px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">First Canadian is almost ready</h3>
+        <p style="margin:0 0 26px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          We are putting the finishing touches on the First Canadian integration. You will be able to rate First Canadian products right in the deal and push deals directly into the First Canadian portal. We have a couple of pilots underway, and if you would like to join them, let us know.
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Share your F&amp;I Menu (coming soon).</strong> Just like a worksheet, you will soon be able to send customers a link to review their protection and warranty options.
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Round payments on the worksheet.</strong> Turn it on and every payment on the worksheet rounds up to the nearest dollar.
+        </p>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Honda and Acura lease deposits</strong> now calculate the same way Honda Financial does.
+        </p>
+        <p style="margin:0 0 0;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          <strong style="color:#1c3556;">Fixes worth calling out.</strong> Failed deal pushes show the real error from the DMS, eDealer inventory shows real Days in Stock, and warranties from all of your providers now show together.
+        </p>
+      </td>
+    </tr>
+
+    </tbody>
+
+    <!-- ======================================== -->
+    <!-- WHAT'S COMING + CLOSING                  -->
+    <!-- ======================================== -->
+    <tbody id="fixed-bottom">
+
+    <tr>
+      <td id="whats-coming" style="padding:36px 40px 36px;background-color:#f5f8fb;">
+        <a name="whats-coming"></a>
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2c6fad;font-family:Arial,Helvetica,sans-serif;">WHAT'S COMING</p>
+        <h2 style="margin:0 0 22px;font-size:21px;color:#1c3556;font-family:Arial,Helvetica,sans-serif;font-weight:700;">A few things to watch for</h2>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Pay by Link</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">Send a payment link from a Work Order, Parts Sale or Cash Transaction, and have the payment post straight to it.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">PowerLane for DealerMine</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">A service lane tool for DealerMine stores. We are looking for pilot partners.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">The new Work Order window</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">Late November or early December, with French language support.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">GM Canada leads in DealerMine</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">Live October 29th, with Subaru Canada to follow.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:18px 0;border-top:1px solid #d8e4ee;border-bottom:1px solid #d8e4ee;">
+              <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">First Canadian in Autovance</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#555555;font-family:Arial,Helvetica,sans-serif;">Rate products and push deals straight into their portal.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:32px 40px 36px;">
+        <p style="margin:0 0 18px;font-size:15px;line-height:1.75;color:#333333;font-family:Arial,Helvetica,sans-serif;">
+          Thanks for reading. If anything here caught your eye, just reply to this email and it comes straight to us.
+        </p>
+        <p style="margin:0 0 2px;font-size:15px;font-weight:700;color:#1c3556;font-family:Arial,Helvetica,sans-serif;">Rick Johnston</p>
+        <p style="margin:0 0 4px;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;">CPO, Quorum</p>
+        <p style="margin:0 0 2px;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;"><a href="mailto:rick.johnston@quoruminfotech.com" style="color:#2c6fad;text-decoration:none;">rick.johnston@quoruminfotech.com</a></p>
+        <p style="margin:0 0 0;font-size:14px;color:#666666;font-family:Arial,Helvetica,sans-serif;">(403) 795-5676</p>
+      </td>
+    </tr>
+
+    </tbody>
+
+  </table>
+
+</td>
+</tr>
+</table>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var edition = (params.get('edition') || '').toUpperCase();
+  if (edition === 'ACC') edition = 'ACA';
+
+  var orders = {
+    DM:   ['autopay', 'dealermine', 'autovance', 'qdms'],
+    QDMS: ['autopay', 'qdms', 'dealermine', 'autovance'],
+    AV:   ['autopay', 'autovance', 'dealermine', 'qdms'],
+    ACA:  ['autopay', 'autovance', 'dealermine', 'qdms']
+  };
+
+  var labels = {
+    autopay: 'Auto Pay',
+    qdms: 'Quorum DMS',
+    dealermine: 'DealerMine',
+    autovance: 'Autovance',
+    'whats-coming': 'What\'s coming'
+  };
+
+  var hrefs = {
+    autopay: '#autopay',
+    qdms: '#dms',
+    dealermine: '#dealermine',
+    autovance: '#autovance',
+    'whats-coming': '#whats-coming'
+  };
+
+  var order = orders[edition];
+  if (!order) return;
+
+  var table = document.getElementById('newsletter-table');
+  var fixedBottom = document.getElementById('fixed-bottom');
+  if (table && fixedBottom) {
+    order.forEach(function (id) {
+      var tbody = document.getElementById('section-' + id);
+      if (tbody) table.insertBefore(tbody, fixedBottom);
+    });
+  }
+
+  var toc = document.getElementById('toc-list');
+  if (toc) {
+    var tocOrder = order.concat(['whats-coming']);
+    var html = '';
+    tocOrder.forEach(function (id, i) {
+      if (!labels[id]) return;
+      var n = ('0' + (i + 1)).slice(-2);
+      var href = hrefs[id];
+      var title = labels[id];
+      html += '<tr>' +
+        '<td width="42" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">' +
+          '<a href="' + href + '" style="text-decoration:none;"><span style="display:inline-block;width:28px;height:28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;line-height:28px;text-align:center;color:#ffffff;background-color:#1e3b5c;border-radius:14px;">' + n + '</span></a>' +
+        '</td>' +
+        '<td valign="middle" style="padding:12px 8px 12px 0;border-bottom:1px solid #d8e1eb;">' +
+          '<a href="' + href + '" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:22px;font-weight:bold;color:#1769aa;text-decoration:none;">' + title + '</a>' +
+        '</td>' +
+        '<td width="24" align="right" valign="middle" style="padding:12px 0;border-bottom:1px solid #d8e1eb;">' +
+          '<a href="' + href + '" style="font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:22px;color:#7ba7c7;text-decoration:none;">&#8250;</a>' +
+        '</td>' +
+      '</tr>';
+    });
+    toc.innerHTML = html;
+  }
+
+  var editionTitles = { DM: 'DealerMine', QDMS: 'Quorum DMS', AV: 'Autovance', ACA: 'Accessible Accessories' };
+  if (editionTitles[edition]) {
+    document.title = 'What We\u2019re Building | October 2026 | ' + editionTitles[edition];
+  }
+}());
+</script>
+<script src="theme.js"></script>
+
+</body>
+</html>
